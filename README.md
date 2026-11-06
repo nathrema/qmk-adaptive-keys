@@ -97,8 +97,6 @@ This adds the keymap to our existing `keymap.c`.
 
 For a complete example, refer to the Opal directory.  
 
-If you'd like to learn more about Alternate Keyboard Layouts, join us in our [discord](https://discord.gg/pjhz8QtjE2). We are always happy to help.
-
 ## FAQ
 
 **What happens if you press an adaptive magic key without any rules active?**  
@@ -114,3 +112,7 @@ void keyboard_post_init_user(void) {
 
 **How do I add a second adaptive magic key?**  
 At this time, only a single adaptive magic key is supported.
+&nbsp;  
+&nbsp;  
+&nbsp;  
+If you'd like to learn more about Alternate Keyboard Layouts, join us in our [discord](https://discord.gg/pjhz8QtjE2). We are always happy to help.
