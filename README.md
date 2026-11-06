@@ -36,7 +36,7 @@ ON_ALL(KC_QUOT);
 REPLACE(KC_ADAPTIVE_MAGIC, KC_R);
 ```
 
-With this rule in place, instead of inputting `'r` we input `'◇`. `r` is now on a different finger than `'`, eliminating the SFB and improving the speed of our inputs.
+With this rule in place, instead of inputting `'r` we input `'◇`. `r` is now on a different finger than `'` until the next keypress, eliminating the SFB and improving the speed of our inputs.
 
 ## Adaptive Swap
 
@@ -58,6 +58,9 @@ SWAP(KC_L, KC_F);
 With this rule in place, instead of inputting `'l` we input `'f`.
 
 We've now eliminated the majority of issues with the position of `'` on the right index. We can continue adding as many or as few rules as we'd like, but keeping in mind that the more rules we add the harder it will be to learn. 
+
+If you'd just like to learn an existing layout, many of the most popular are in this repository.  
+If there's a layout you'd like to see included, please open an [issue](https://github.com/nathrema/qmk_adaptive_keys/issues/new/choose).
 
 ## Methods
 `ON_ALL(INITIAL_KEY);`
@@ -97,4 +100,21 @@ This adds the keymap to our existing `keymap.c`.
 
 For a complete example, refer to the Opal directory.  
 
+## FAQ
+
+**What happens if you press an adaptive magic key without any rules active?**  
+By default the adaptive magic key functions as a [repeat key](https://docs.qmk.fm/features/repeat_key).
+
+**How do I change the default output of the adaptive magic key?**  
+Add the following to `keymap.c`:  
+```
+void keyboard_post_init_user(void) {
+  set_adaptive_magic_default(<KC_KEY>);
+}
+```
+
+**How do I add a second adaptive magic key?**  
+At this time, only a single adaptive magic key is supported.
+
+**Which layout should I learn?**  
 If you'd like to learn more about Alternate Keyboard Layouts, join us in our [discord](https://discord.gg/pjhz8QtjE2). We are always happy to help.
