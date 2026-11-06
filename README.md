@@ -101,10 +101,10 @@ If you'd like to learn more about Alternate Keyboard Layouts, join us in our [di
 
 ## FAQ
 
-What happens if you press an adaptive magic key without any rules in place?  
+**What happens if you press an adaptive magic key without any rules in place?**  
 By default the adaptive magic key functions as a [repeat key](https://docs.qmk.fm/features/repeat_key).
 
-How do I change the default output of the adaptive magic key?  
+**How do I change the default output of the adaptive magic key?**  
 Add the following to `keymap.c`:  
 ```
 void keyboard_post_init_user(void) {
@@ -112,5 +112,5 @@ void keyboard_post_init_user(void) {
 }
 ```
 
-How do I add a second adaptive magic key?  
+**How do I add a second adaptive magic key?**  
 At this time, only a single adaptive magic key is supported.
