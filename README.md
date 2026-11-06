@@ -17,7 +17,7 @@ Layout authors use these to fix various issues with a keyboard layout.
 &nbsp;  
 ![opal keymap](image/opal.png)
 
-This is [Opal's](https://akl.gg/#.gQC6MDFNMkNaR1IwUllYTkNCNzc3R1BaR0dCRk4) default keymap, with `◇` representing our adaptive magic key. Opal's keymap is very well optimized, but even so, there are issues we can address with adaptives.
+This is [Opal's](opal) default keymap, with `◇` representing our adaptive magic key. Opal's keymap is very well optimized, but even so, there are issues we can address with adaptives.
 
 ## Adaptive Magic
 
@@ -59,7 +59,7 @@ With this rule in place, instead of inputting `'l` we input `'f`.
 
 We've now eliminated the majority of issues with the position of `'` on the right index. We can continue adding as many or as few rules as we'd like, but keeping in mind that the more rules we add the harder it will be to learn. 
 
-If you'd just like to learn an existing layout, many of the most popular are in this repository.  
+If you'd just like to learn an existing adaptive layout, many of the most popular are in this repository.  
 
 ## Methods
 `ON_ALL(INITIAL_KEY);`
