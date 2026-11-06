@@ -112,7 +112,9 @@ bool process_adaptive_swap(uint16_t keycode, const keyrecord_t *record) {
 #endif
 
         tap_code_adaptive(second, record);
-        set_last_keycode(second);
+	if (second != KC_ADAPTIVE_MAGIC) {
+        	set_last_keycode(second);
+	}
       }
     switch (keycode) {
 #undef CAPTURE
