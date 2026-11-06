@@ -98,3 +98,19 @@ This adds the keymap to our existing `keymap.c`.
 For a complete example, refer to the Opal directory.  
 
 If you'd like to learn more about Alternate Keyboard Layouts, join us in our [discord](https://discord.gg/pjhz8QtjE2). We are always happy to help.
+
+## FAQ
+
+What happens if you press an adaptive magic key without any rules in place?  
+By default the adaptive magic key functions as a [repeat key](https://docs.qmk.fm/features/repeat_key).
+
+How do I change the default output of the adaptive magic key?  
+Add the following to `keymap.c`:  
+```
+void keyboard_post_init_user(void) {
+  set_adaptive_magic_default(<KC_KEY>);
+}
+```
+
+How do I add a second adaptive magic key?  
+At this time, only a single adaptive magic key is supported.
