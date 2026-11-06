@@ -17,7 +17,7 @@ Layout authors use these to fix various issues with a keyboard layout.
 &nbsp;  
 ![opal keymap](image/opal.png)
 
-This is [Opal's](https://akl.gg/#.gQC6MDFNMkNaR1IwUllYTkNCNzc3R1BaR0dCRk4) default keymap, with `◇` representing our adaptive magic key. Opal's keymap is very well optimized, but even so, there are issues we can address with adaptives.
+This is [Opal's](opal) default keymap, with `◇` representing our adaptive magic key. Opal's keymap is very well optimized, but even so, there are issues we can address with adaptives.
 
 ## Adaptive Magic
 
