@@ -1,4 +1,4 @@
-## Chog-v2  
+## Chog V2  
 
 ![finch keymap](../image/chog-v2.png)
   

@@ -60,7 +60,6 @@ With this rule in place, instead of inputting `'l` we input `'f`.
 We've now eliminated the majority of issues with the position of `'` on the right index. We can continue adding as many or as few rules as we'd like, but keeping in mind that the more rules we add the harder it will be to learn. 
 
 If you'd just like to learn an existing layout, many of the most popular are in this repository.  
-If there's a layout you'd like to see included, please open an [issue](https://github.com/nathrema/qmk_adaptive_keys/issues/new/choose).
 
 ## Methods
 `ON_ALL(INITIAL_KEY);`

@@ -24,6 +24,7 @@ bool remember_last_key_user(uint16_t keycode, keyrecord_t* record, uint8_t* reme
 // x k l c p z y o h ,
 //  n r t d m ' s a e i
 //   b v j g w q f u ; .
+//               *
 
 // EXAMPLE KEYMAP
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
