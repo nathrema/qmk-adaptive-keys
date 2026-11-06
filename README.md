@@ -101,7 +101,7 @@ If you'd like to learn more about Alternate Keyboard Layouts, join us in our [di
 
 ## FAQ
 
-**What happens if you press an adaptive magic key without any rules in place?**  
+**What happens if you press an adaptive magic key without any rules active?**  
 By default the adaptive magic key functions as a [repeat key](https://docs.qmk.fm/features/repeat_key).
 
 **How do I change the default output of the adaptive magic key?**  
