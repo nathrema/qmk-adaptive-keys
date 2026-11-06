@@ -2,7 +2,7 @@ ON(0, KC_A);
 SWAP(KC_Y, KC_E);
 
 ON(0, KC_L);
-SWAP(KC_Y, KC_SLSH);
+SWAP(KC_Y, KC_H);
 
 ON(0, KC_M);
 SWAP(KC_P, KC_D);
