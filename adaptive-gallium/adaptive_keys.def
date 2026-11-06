@@ -1,0 +1,22 @@
+ON(0, KC_B);
+SWAP(KC_R, KC_D);
+
+ON(0, KC_C);
+SWAP(KC_S, KC_X);
+
+ON(0, KC_M);
+SWAP(KC_B, KC_C);
+
+ON(0, KC_P);
+SWAP(KC_H, KC_N);
+
+ON(0, KC_R);
+SWAP(KC_L, KC_Z);
+
+ON(0, KC_S);
+SWAP(KC_C, KC_D);
+SWAP(KC_W, KC_R);
+
+ON(0, KC_U);
+SWAP(KC_E, KC_O);
+
