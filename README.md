@@ -81,8 +81,7 @@ For example: `qmk_firmware/keyboards/<keyboard brand>/<keyboard name>/<keyboard 
 
 2. Create a keymap using QMK's [Configurator](https://config.qmk.fm).
 
-3. If you'd like to include an adaptive magic key, apply the ANY function to a key.
-![ANY function](image/any.png)
+3. If you'd like to include an adaptive magic key, apply the ANY function to a key.  
 Paste `KC_ADAPTIVE_MAGIC` into the ANY key's text field. 
 
 5. Download `keymap.json` to the `example` folder we copied.
