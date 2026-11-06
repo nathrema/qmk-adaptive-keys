@@ -1,6 +1,6 @@
 ## Opal  
 
-![opal keymap](../image/opal.png)
+![opal keymap](../image/opal-full.png)
   
 Site [Link](https://layouts.zakventer.com/opal)  
 Layouts.wiki [Link](https://layouts.wiki/layouts/2026/opal)  
