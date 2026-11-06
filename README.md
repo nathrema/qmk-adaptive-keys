@@ -36,7 +36,7 @@ ON_ALL(KC_QUOT);
 REPLACE(KC_ADAPTIVE_MAGIC, KC_R);
 ```
 
-With this rule in place, instead of inputting `'r` we input `'◇`. `r` is now on a different finger than `'`, eliminating the SFB and improving the speed of our inputs.
+With this rule in place, instead of inputting `'r` we input `'◇`. `r` is now on a different finger than `'` until the next keypress, eliminating the SFB and improving the speed of our inputs.
 
 ## Adaptive Swap
 
