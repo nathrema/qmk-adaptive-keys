@@ -105,7 +105,7 @@ bool process_adaptive_swap(uint16_t keycode, const keyrecord_t *record) {
         set_mods(prior_saved_mods);
         tap_code_adaptive(first, record);
 
-#ifdef ADAPTIVE_KEY_ENABLE
+#ifdef CAPS_WORD_ENABLE
         if (is_caps_word_on() && !caps_word_press_user(second)) {
             add_weak_mods(MOD_BIT(KC_LSFT));
         }
