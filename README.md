@@ -7,7 +7,7 @@ Changes it's output depending on which key was pressed before it.
 ##### Adaptive Swap
 After pressing an arbitrary leader key, temporarily swap the position of two keys.
 
-For a more through overview, click [here](https://dario.ca/posts/2026-05-18-keyboard-layout-adaptive-swaps).
+For a more thorough overview, click [here](https://dario.ca/posts/2026-05-18-keyboard-layout-adaptive-swaps).
 
 ## Why?
 
