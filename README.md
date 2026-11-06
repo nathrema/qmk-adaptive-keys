@@ -116,7 +116,7 @@ void keyboard_post_init_user(void) {
 **How do I add a second adaptive magic key?**  
 At this time, only a single adaptive magic key is supported.
 
-**How do I add combos?**
+**How do I add combos?**  
 [Combos](https://docs.qmk.fm/features/combo) are already built-in to QMK.
 
 **Which layout should I learn?**  
