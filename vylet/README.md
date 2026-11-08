@@ -4,4 +4,4 @@
   
 Site [Link](https://github.com/MightyAcas/vylet)  
 Layouts.wiki [Link](https://layouts.wiki/layouts/2024/vylet)  
-akl.gg [Link](https://akl.gg/#.gQC6MDFNMkNaUThONkpKQ1ZOS1RQTUpWU0pIQkE)
+akl.gg [Link](https://akl.gg/#.gQC6MDFNMkNaUUEyMFJYRlhTNzdCMFBZMzE0RVY)
