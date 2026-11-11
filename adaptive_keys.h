@@ -11,6 +11,10 @@ void set_adaptive_magic_default(uint16_t default_key) {
     adaptive_magic_default = default_key;
 }
 
+bool should_process_key_adaptive(uint16_t keycode) {
+    return !(keycode == KC_LCTL || keycode == KC_RCTL || keycode == KC_LGUI || keycode == KC_RGUI || keycode == KC_LALT || keycode == KC_RALT || keycode == KC_LSFT || keycode == KC_RSFT || keycode == KC_CAPS || keycode == KC_SCRL || keycode == KC_PSCR || keycode == KC_NUM || keycode == CW_TOGG || keycode == OS_LSFT || keycode == OS_RSFT);
+}
+
 bool process_adaptive_magic(uint16_t keycode, const keyrecord_t *record) {
       switch(keycode) {
     case KC_ADAPTIVE_MAGIC:
@@ -44,6 +48,10 @@ bool is_marked_layer(int layer) {
 }
 
 bool process_adaptive_swap(uint16_t keycode, const keyrecord_t *record) {
+    if (!should_process_key_adaptive(keycode)) {
+            return true;
+    }
+
   bool should_process_key = true;
   uint8_t current_layer = get_highest_layer(layer_state | default_layer_state);
 
@@ -64,7 +72,7 @@ bool process_adaptive_swap(uint16_t keycode, const keyrecord_t *record) {
 
       switch (prior_keycode) {
       case KC_NO:
-        switch (keycode) {
+        switch (keycode_base) {
 #define CAPTURE(key, def_key, layer) \
   default: \
     marked_layer = layer; \
