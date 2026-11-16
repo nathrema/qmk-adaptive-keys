@@ -47,11 +47,6 @@ bool is_marked_layer(int layer) {
     return marked_layer == -1 || marked_layer == layer;
 }
 
-void reset_adaptive(void) {
-	prior_keycode = KC_NO;
-	prior_saved_mods = 0;
-}
-
 bool process_adaptive_swap(uint16_t keycode, const keyrecord_t *record) {
     if (!should_process_key_adaptive(keycode)) {
             return true;
@@ -61,12 +56,6 @@ bool process_adaptive_swap(uint16_t keycode, const keyrecord_t *record) {
   uint8_t current_layer = get_highest_layer(layer_state | default_layer_state);
 
   if (record->event.pressed) {
-#ifdef ADAPTIVE_RESET_ON_SPACE
-    if (keycode == KC_SPC) {
-	    reset_adaptive();
-	    return true;
-    }
-#endif
     uint8_t saved_mods = get_mods();
     if (saved_mods & MOD_MASK_CAG) {
       return true;
