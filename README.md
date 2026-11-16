@@ -62,6 +62,7 @@ We've now eliminated the majority of issues with the position of `'` on the righ
 If you'd just like to learn an existing adaptive layout, many of the most popular are in this repository.  
 
 ## Methods
+
 `ON_ALL(INITIAL_KEY);`
 On all layers, apply the following to `INITIAL_KEY`.
 
@@ -75,6 +76,16 @@ After pressing `INITIAL_KEY`, swap `KEY1` and `KEY2`.
 After pressing `INITIAL_KEY`, replace `KEY1` with `KEY2`.
 
 Note: A character **must only appear once** as `INITIAL_KEY`.
+
+## Options
+
+Options are specified in `config.h` under your keyboard's keymap folder.
+
+### ADAPTIVE_RESET_ON_SPACE  
+```
+#define ADAPTIVE_RESET_ON_SPACE
+```
+When enabled, resets any active adaptive swaps when `KC_SPC` is pressed.  
 
 ## Usage
 
