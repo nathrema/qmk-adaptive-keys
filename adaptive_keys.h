@@ -56,10 +56,7 @@ bool process_adaptive_swap(uint16_t keycode, const keyrecord_t *record) {
   uint8_t current_layer = get_highest_layer(layer_state | default_layer_state);
 
   if (record->event.pressed) {
-    uint8_t saved_mods = get_mods();
-    if (saved_mods & MOD_MASK_CAG) {
-      return true;
-    }
+      uint8_t saved_mods = get_mods();
       unregister_code(KC_LSFT);
       unregister_code(KC_RSFT);
       uint16_t keycode_base = keycode & 0xFF;
