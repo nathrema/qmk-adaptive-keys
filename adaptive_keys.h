@@ -117,6 +117,9 @@ bool process_adaptive_swap(uint16_t keycode, const keyrecord_t *record) {
 #endif
 
         tap_code_adaptive(second, record);
+	if (second == OS_LSFT || second == OS_RSFT) {
+		add_oneshot_mods(MOD_BIT(KC_LSFT));
+	}
 	if (second != KC_ADAPTIVE_MAGIC) {
         	set_last_keycode(second);
 	}
@@ -137,7 +140,7 @@ bool process_adaptive_swap(uint16_t keycode, const keyrecord_t *record) {
 #define SWAP(...)
 #include "adaptive_keys.def"
     }
-    prior_saved_mods = saved_mods;
+    prior_saved_mods = get_mods();
     prior_keycode = keycode;
   }
   return should_process_key;
