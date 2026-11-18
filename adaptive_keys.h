@@ -12,7 +12,7 @@ void set_adaptive_magic_default(uint16_t default_key) {
 }
 
 bool should_process_key_adaptive(uint16_t keycode) {
-    return !(keycode == KC_LCTL || keycode == KC_RCTL || keycode == KC_LGUI || keycode == KC_RGUI || keycode == KC_LALT || keycode == KC_RALT || keycode == KC_LSFT || keycode == KC_RSFT || keycode == KC_CAPS || keycode == KC_SCRL || keycode == KC_PSCR || keycode == KC_NUM || keycode == CW_TOGG || keycode == OS_LSFT || keycode == OS_RSFT);
+    return !(keycode == KC_LCTL || keycode == KC_RCTL || keycode == KC_LGUI || keycode == KC_RGUI || keycode == KC_LALT || keycode == KC_RALT || keycode == KC_LSFT || keycode == KC_RSFT || keycode == KC_CAPS || keycode == KC_SCRL || keycode == KC_PSCR || keycode == KC_NUM || keycode == CW_TOGG || keycode == OS_LSFT || keycode == OS_RSFT || keycode == KC_CAPS);
 }
 
 bool process_adaptive_magic(uint16_t keycode, const keyrecord_t *record) {
